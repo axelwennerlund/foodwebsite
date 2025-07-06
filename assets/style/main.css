@@ -1,0 +1,96 @@
+@font-face {
+    font-family: "Goudy Bookletter 1911";
+    src: url("/assets/fonts/GoudyBookletter1911-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Zen Kaku Gothic";
+    src: url("/assets/fonts/ZenKakuGothicNew-Regular.ttf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F8F5F2;
+}
+
+h1 {
+    color: #262626;
+    font-family: "Goudy Bookletter 1911", serif;
+    font-size: 6rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+h2 {
+    color: #262626;
+    font-family: "Goudy Bookletter 1911", serif;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+h3 {
+    font-family: "Zen Kaku Gothic", sans-serif;
+    color: #262626;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+p, li {
+    color: #262626;
+    font-family: "Zen Kaku Gothic", sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #FFB85C;
+    margin: 2rem auto 0;
+    padding: 1rem 0;
+    max-width: 80rem;
+}
+
+nav a {
+    font-size: 1.5rem;
+    color: #262626;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+nav a:visited {
+    color: #262626;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #FFD700;
+}
+
+main {
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    max-width: 80rem;
+    padding: 2rem;
+}
+
+section {
+    padding: 1rem 0;
+}
+
+footer {
+    margin: 0 auto;
+    background-color: #FFB85C;
+    max-width: 80rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+footer p {
+    text-align: center;
+}
