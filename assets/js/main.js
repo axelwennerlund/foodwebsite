@@ -1,4 +1,4 @@
-import {fetchRecipes} from "./functions.js";
+import {fetchRecipes} from "./recipes.js";
 
 addEventListener('load', main);
 
