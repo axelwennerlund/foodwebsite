@@ -18,6 +18,9 @@ async function fetchRecipe(id){
 }
 
 function renderRecipe(recipe){
+
+    const webpageTitle = document.querySelector("title");
+    webpageTitle.innerHTML = `${recipe.name} - Gott & Enkelt`;
     
     const title = document.querySelector("h3");
     title.innerHTML = `${recipe.name}`;
