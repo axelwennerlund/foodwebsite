@@ -16,8 +16,10 @@
     <div id="wrapper">
 
         <header>
-            <h1>Gott & Enkelt</h1>
-            <h2>Din guide till matlagningsglädje</h2>
+            <a href="../index.html" class="header-link">
+              <h1>Gott & Enkelt</h1>
+              <h2>Din guide till matlagningsglädje</h2>
+            </a>
         </header>
 
         <nav>
@@ -34,7 +36,58 @@
 
             <h3>Boka kurs</h3>
 
-            <fieldset></fieldset>
+            <form method="post" action="#">
+
+                <p>
+                  <label for="firstname">Förnamn</label>
+                  <input type="text" name="firstname" id="firstname">
+                </p>
+              
+                <p>
+                  <label for="lastname">Efternamn</label>
+                  <input type="text" name="lastname" id="lastname">
+                </p>
+              
+                <p>
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email">
+                </p>
+              
+                <p>
+                  <label for="phone">Telefonnummer</label>
+                  <input type="tel" name="phone" id="phone">
+                </p>
+              
+                <p>
+                  <label for="course">Välj kurs</label>
+                  <select name="course" id="course">
+                    <option value="">-- Välj en kurs --</option>
+                    <option value="italian">Italiensk Husmanskost</option>
+                    <option value="sushi">Sushi för Nybörjare</option>
+                    <option value="vegetarian">Vegetarisk Matlagning</option>
+                  </select>
+                </p>
+              
+                <p>
+                  <label for="date">Datum</label>
+                  <input type="date" name="date" id="date">
+                </p>
+              
+                <fieldset>
+                  <legend>Antal personer</legend>
+                  <label><input type="radio" name="people" value="1"> 1</label>
+                  <label><input type="radio" name="people" value="2"> 2</label>
+                  <label><input type="radio" name="people" value="3"> 3</label>
+                  <label><input type="radio" name="people" value="4"> 4</label>
+                  <label><input type="radio" name="people" value="5"> 5</label>
+                  <label><input type="radio" name="people" value="6"> 6</label>
+                </fieldset>
+              
+                <p>
+                  <button type="submit">Boka</button>
+                </p>
+              
+              </form>
 
           </main>          
 

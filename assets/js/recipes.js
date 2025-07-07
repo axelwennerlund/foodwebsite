@@ -52,11 +52,11 @@ export async function fetchRecipes() {
     card.classList.add("card");
   
     card.innerHTML = `
-      <a href="recipe.html?id=${recipe.id}"><img src="${recipe.image}" alt="${recipe.name}"></a>
+      <a href="recipe.html?id=${recipe.id}"><img src="${recipe.image}" alt="${recipe.name}">
       <div class="card-body">
         <h3>${recipe.name}</h3>
         <p>${recipe.prepTimeMinutes + recipe.cookTimeMinutes} min | ${recipe.difficulty}</p>
-      </div>
+      </div></a>
     `;
   
     return card;

@@ -33,16 +33,22 @@ h2 {
 }
 
 h3 {
-    font-family: "Zen Kaku Gothic", sans-serif;
+    font-family: "Goudy Bookletter 1911", serif;
     color: #262626;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: 700;
     margin-bottom: 0.5rem;
 }
 
-h4 {
-    font-family: "Zen Kaku Gothic", sans-serif;
-    color: #262626;
+h3 + p {
     font-size: 1.5rem;
+}
+
+h4 {
+    font-family: "Goudy Bookletter 1911", serif;
+    color: #262626;
+    font-size: 2rem;
+    font-weight: 500;
     margin-bottom: 0.5rem;
 }
 
@@ -50,7 +56,16 @@ p, li, label {
     color: #262626;
     font-family: "Zen Kaku Gothic", sans-serif;
     font-size: 1.2rem;
+    line-height: 1.5;
     margin-bottom: 0.5rem;
+}
+
+strong {
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
 }
 
 nav {
@@ -68,6 +83,7 @@ nav a {
     color: #262626;
     text-decoration: none;
     margin: 0 1rem;
+    transition: all 0.2s ease;
 }
 
 nav a:visited {
@@ -75,8 +91,18 @@ nav a:visited {
 }
 
 nav a:hover {
-    text-decoration: underline;
-    color: #FFD700;
+    color: #262626;
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+}
+
+header {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.header-link {
+    text-decoration: none;
 }
 
 main {
@@ -84,6 +110,7 @@ main {
     margin: 0 auto;
     max-width: 80rem;
     padding: 2rem;
+    text-align: center;
 }
 
 section {
@@ -101,7 +128,7 @@ input, select {
 #filter-form button {
     display: block;
     width:auto;
-    margin-top: 1rem;
+    margin: 2rem auto 0;
     padding: 0.75rem 1rem;
     background-color: #FFB85C;
     color: black;
@@ -161,6 +188,7 @@ input, select {
     max-width: 70rem;
     margin: 2rem auto;
     padding: 1rem;
+    text-align: left;
 }
   
 .recipe-text {
@@ -195,6 +223,46 @@ input, select {
     list-style: decimal;
     margin-left: 1.5rem;
 }
+
+/* Matlagningskursr */
+
+.course-list {
+    display: flex;
+    gap: 2rem;
+    max-width: 70rem;
+    margin: 2rem auto 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.course-list article {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.course-list article img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 0.5em 1em;
+    font-size: 1.5rem;
+    background-color: #FFB85C;
+    color: #262626;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+  }
+  
+  .button-link:hover {
+    background-color: #db9232;
+  }  
 
 /* Footer */
 
