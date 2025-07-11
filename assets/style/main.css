@@ -44,12 +44,17 @@ h3+p {
     font-size: 1.5rem;
 }
 
-h4 {
+h4,
+h5 {
     font-family: "Goudy Bookletter 1911", serif;
     color: #262626;
     font-size: 2rem;
     font-weight: 500;
     margin-bottom: 0.5rem;
+}
+
+h5 {
+    font-size: 1.5rem;
 }
 
 p,
@@ -111,7 +116,7 @@ main {
     background-color: #FFFFFF;
     margin: 0 auto;
     max-width: 80rem;
-    padding: 2rem;
+    padding: 2rem 8rem 2rem 8rem;
     text-align: center;
 }
 
@@ -330,20 +335,6 @@ button:hover {
     border-radius: 8px;
 }
 
-/* Tipssida */
-
-.fruit-tips {
-    display: flex;
-    gap: 2rem;
-    max-width: 70rem;
-    margin: 2rem auto 1rem;
-    padding: 1rem;
-}
-
-.fruit-tips img {
-    width: 50%;
-}
-
 /* Table */
 
 table {
@@ -351,6 +342,7 @@ table {
     border-collapse: collapse;
     text-align: left;
     font-size: 1rem;
+    margin-bottom: 2rem;
 }
 
 th,
@@ -390,6 +382,39 @@ th {
 .button-link:hover {
     background-color: #db9232;
 }
+
+/* Seasons */
+
+.seasons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 70rem;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.season-block {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.season-block article {
+    flex: 1;
+    text-align: left;
+}
+
+.season-block img {
+    flex: 1;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
 
 /* Footer */
 
