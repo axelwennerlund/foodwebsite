@@ -72,7 +72,9 @@ strong {
 }
 
 a {
+    color: inherit;
     text-decoration: none;
+    font-weight: 800;
 }
 
 nav {
@@ -201,7 +203,7 @@ textarea {
     resize: vertical;
 }
 
-/* Filter form */
+/* Filter recipes form */
 
 input,
 select {
@@ -307,7 +309,7 @@ button:hover {
 
 #instructions {
     list-style: decimal;
-    margin-left: 1.5rem;
+    list-style-position: inside;
 }
 
 /* Matlagningskursr */
@@ -368,7 +370,8 @@ tr:nth-of-type(even) {
 
 /* Speciell layout för tabellen i fruit-tips */
 .fruit-tips table {
-    width: 50%;
+    width: 90%;
+    margin: 2rem auto;
 }
 
 .button-link {
@@ -441,4 +444,241 @@ footer {
 
 footer p {
     text-align: center;
+}
+
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 5rem;
+        margin-top: 1rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p,
+    li,
+    label {
+        font-size: 1rem;
+    }
+
+    header {
+        margin: 1rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      
+      nav a {
+        margin: 0.5rem;
+        display: block;
+        width: 100%;
+        text-align: center;
+      }      
+
+    main {
+        padding: 1rem;
+    }
+
+    .image-row,
+    .course-list,
+    .recipe-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .recipe-container img,
+    .season-block img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .fruit-tips table {
+        width: 100%;
+    }
+
+    form p {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    form p label {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    form p input,
+    form p select {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    /* table */
+
+    .fruit-tips table,
+    .fruit-tips thead,
+    .fruit-tips tbody,
+    .fruit-tips th,
+    .fruit-tips td,
+    .fruit-tips tr {
+        display: block;
+        width: 100%;
+    }
+
+    .fruit-tips thead tr {
+        display: none;
+    }
+
+    .fruit-tips tr {
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        padding: 1rem;
+        background: #fff;
+        border-radius: 8px;
+    }
+
+    .fruit-tips td {
+        position: relative;
+        padding-left: 50%;
+        font-size: 0.7rem;
+        padding-bottom: 1rem;
+        border: none;
+    }
+
+    .fruit-tips td::before {
+        position: absolute;
+        top: 0.5rem;
+        left: 1rem;
+        width: 45%;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+
+    .fruit-tips td:nth-of-type(1)::before {
+        content: "Frukt/grönsak";
+    }
+
+    .fruit-tips td:nth-of-type(2)::before {
+        content: "Vad du ska kolla efter";
+    }
+
+    .fruit-tips td:nth-of-type(3)::before {
+        content: "Undvik";
+    }
+
+
+}
+
+@media (min-width: 1920px) {
+
+    nav,
+    main,
+    header,
+    footer {
+        max-width: 100rem;
+    }
+
+    h1 {
+        font-size: 8rem;
+    }
+
+    h2,
+    h3 {
+        font-size: 4rem;
+    }
+
+    h4,
+    h5 {
+        font-size: 3rem;
+    }
+
+    p,
+    li,
+    a,
+    h3+p {
+        font-size: 2rem;
+    }
+
+    nav a {
+        font-size: 2.5rem;
+    }
+
+    table,
+    th {
+        font-size: 2rem;
+    }
+
+    /* Filter recipes form */
+
+    input,
+    select {
+        font-size: 2rem;
+    }
+
+    button {
+        font-size: 2rem;
+    }
+
+    /* Recipes gallery */
+
+    .gallery {
+        gap: 2rem;
+        padding: 4rem;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    }
+
+    .card h3 {
+        font-size: 2rem;
+    }
+
+    .card p {
+        font-size: 2rem;
+    }
+
+    /* Recipe page */
+
+    .recipe-text h3 {
+        font-size: 3rem;
+    }
+
+    .recipe-text li {
+        font-size: 2rem;
+    }
+
+    /* Form */
+
+    form {
+        max-width: 70rem;
+        padding: 3rem;
+    }
+
+    form p input,
+    form p select,
+    textarea {
+        font-size: 2rem;
+        padding: 1rem;
+        min-width: 30rem;
+    }
+
+    form p label {
+        font-size: 2rem;
+        width: 16rem;
+    }
+
+
 }
