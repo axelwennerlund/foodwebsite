@@ -348,7 +348,7 @@ table {
 th,
 td {
     padding: 0.75em 1em;
-    border: 1px solid #ccc;
+    border: 1px solid #E0DED8;
     vertical-align: top;
     text-align: center;
     font-family: "Zen Kaku Gothic", sans-serif;
@@ -357,7 +357,13 @@ td {
 th {
     background-color: #FFB85C;
     color: #262626;
+    font-family: "Goudy Bookletter 1911", serif;
+    font-size: 1.2rem;
     font-weight: 900;
+}
+
+tr:nth-of-type(even) {
+    background-color: #eaeaea;
 }
 
 /* Speciell layout för tabellen i fruit-tips */
@@ -415,6 +421,13 @@ th {
     object-fit: cover;
 }
 
+/* Lists in article */
+
+article ul {
+    list-style-type: circle;
+    list-style-position: inside;
+    line-height: 2;
+}
 
 /* Footer */
 
