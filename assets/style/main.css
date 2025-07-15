@@ -14,46 +14,53 @@
 
 body {
     background-color: #F8F5F2;
+    color: #262626;
+    font-family: "Zen Kaku Gothic", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Text */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Goudy Bookletter 1911", serif;
+    color: #262626;
+    font-weight: 700;
 }
 
 h1 {
-    color: #262626;
-    font-family: "Goudy Bookletter 1911", serif;
     font-size: 6rem;
     text-align: center;
     margin-top: 3rem;
 }
 
 h2 {
-    color: #262626;
-    font-family: "Goudy Bookletter 1911", serif;
     font-size: 2rem;
     text-align: center;
-    margin-top: 1rem;
 }
 
 h3 {
-    font-family: "Goudy Bookletter 1911", serif;
-    color: #262626;
     font-size: 2.5rem;
-    font-weight: 700;
     margin-bottom: 0.5rem;
 }
 
-h3+p {
-    font-size: 1.5rem;
-}
-
-h4,
-h5 {
-    font-family: "Goudy Bookletter 1911", serif;
-    color: #262626;
+h4 {
     font-size: 2rem;
     font-weight: 500;
     margin-bottom: 0.5rem;
 }
 
 h5 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+h3+p {
     font-size: 1.5rem;
 }
 
@@ -75,7 +82,10 @@ a {
     color: inherit;
     text-decoration: none;
     font-weight: 800;
+    transition: all 0.2s ease;
 }
+
+/* Navigation */
 
 nav {
     display: flex;
@@ -90,20 +100,18 @@ nav {
 nav a {
     font-size: 1.5rem;
     color: #262626;
-    text-decoration: none;
     margin: 0 1rem;
-    transition: all 0.2s ease;
 }
 
 nav a:visited {
-    color: #262626;
+    color: inherit;
 }
 
 nav a:hover {
-    color: #262626;
-    font-weight: 800;
     letter-spacing: 0.1rem;
 }
+
+/* Header */
 
 header {
     max-width: 80rem;
@@ -113,6 +121,8 @@ header {
 .header-link {
     text-decoration: none;
 }
+
+/* Main */
 
 main {
     background-color: #FFFFFF;
@@ -126,6 +136,13 @@ section {
     padding: 1rem 0;
 }
 
+article ul {
+    list-style: circle inside;
+    line-height: 2;
+    margin: 0;
+    padding: 0;
+}
+
 /* Images on Index Page */
 
 .image-row {
@@ -133,14 +150,12 @@ section {
     gap: 1rem;
     max-width: 70rem;
     margin: 0rem auto;
-    padding: 1rem;
     justify-content: center;
 }
 
 .decor-image {
     flex: 1;
-    height: 200px;
-    /* Adjust as needed */
+    height: 12rem;
     background-size: cover;
     background-position: center;
     border-radius: 8px;
@@ -158,7 +173,7 @@ section {
     background-image: url("/assets/images/decor2.jpg");
 }
 
-/* Form */
+/* Forms */
 
 form {
     background-color: #fff;
@@ -166,14 +181,14 @@ form {
     margin: 2rem auto;
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.102);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 form p {
     display: flex;
     align-items: center;
-    margin-bottom: 1rem;
     flex-wrap: wrap;
+    margin-bottom: 1rem;
 }
 
 form p label {
@@ -182,50 +197,51 @@ form p label {
     text-align: left;
 }
 
+input,
+select,
+textarea {
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: "Zen Kaku Gothic", sans-serif;
+}
+
 form p input,
 form p select {
     flex: 1;
-    padding: 0.5rem;
-    font-size: 1rem;
-    border-radius: 4px;
-    border: 1px solid #ccc;
     margin-left: 1rem;
     min-width: 12rem;
 }
 
 textarea {
     width: 100%;
-    font-size: 1.2rem;
-    font-family: "Zen Kaku Gothic", sans-serif;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
 }
-
-/* Filter recipes form */
 
 input,
 select {
-    font-size: 1rem;
     margin: 0 1rem 0 0.2rem;
     width: max-content;
 }
 
-button {
+/* Buttons */
+
+button,
+.button-link {
     display: inline-block;
-    width: auto;
-    margin: 2rem auto 0;
     padding: 0.75rem 1rem;
+    margin: 2rem auto 0;
     background-color: #FFB85C;
     color: black;
     border: none;
     border-radius: 6px;
     font-size: 1rem;
     transition: background-color 0.3s ease;
+    text-align: center;
 }
 
-button:hover {
+button:hover,
+.button-link:hover {
     background-color: #db9232;
 }
 
@@ -249,8 +265,7 @@ button:hover {
 
 .card img {
     width: 100%;
-    height: 180px;
-    /* Jag vet att man inte ska bestämma storlek på bilder i koden, men eftersom jag använder object-fit: cover så är det inte bildens height jag sätter här utan istället hur stor DEL av bildens height som syns */
+    height: 12rem;
     object-fit: cover;
 }
 
@@ -272,6 +287,7 @@ button:hover {
 
 .recipe-container {
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
     max-width: 70rem;
     margin: 2rem auto;
@@ -285,21 +301,22 @@ button:hover {
 
 .recipe-container img {
     width: 30rem;
-    height: auto;
     max-height: 30rem;
+    height: auto;
     border-radius: 8px;
     object-fit: cover;
+    display: block;
+}
+
+.recipe-text h3,
+.recipe-text h4 {
+    font-weight: 800;
+    margin: 1rem 0 0.8rem;
 }
 
 .recipe-text h3 {
     font-size: 2.5rem;
-    font-weight: 800;
-}
-
-.recipe-text h4 {
-    margin-top: 1rem;
-    font-weight: 800;
-    margin-bottom: 0.8rem;
+    margin-top: 0;
 }
 
 .recipe-text li {
@@ -312,7 +329,7 @@ button:hover {
     list-style-position: inside;
 }
 
-/* Matlagningskursr */
+/* Cooking Classes */
 
 .course-list {
     display: flex;
@@ -337,14 +354,18 @@ button:hover {
     border-radius: 8px;
 }
 
-/* Table */
+/* Tables */
 
 table {
     width: 100%;
     border-collapse: collapse;
-    text-align: left;
-    font-size: 1rem;
     margin-bottom: 2rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+table * {
+    font-family: "Zen Kaku Gothic", sans-serif;
 }
 
 th,
@@ -352,8 +373,6 @@ td {
     padding: 0.75em 1em;
     border: 1px solid #E0DED8;
     vertical-align: top;
-    text-align: center;
-    font-family: "Zen Kaku Gothic", sans-serif;
 }
 
 th {
@@ -368,28 +387,9 @@ tr:nth-of-type(even) {
     background-color: #eaeaea;
 }
 
-/* Speciell layout för tabellen i fruit-tips */
 .fruit-tips table {
     width: 90%;
     margin: 2rem auto;
-}
-
-.button-link {
-    display: inline-block;
-    padding: 1rem;
-    font-size: 1.3rem;
-    background-color: #FFB85C;
-    color: black;
-    border: none;
-    border-radius: 6px;
-    text-decoration: none;
-    font-family: "Zen Kaku Gothic", sans-serif;
-    font-weight: normal;
-    transition: background-color 0.3s ease;
-}
-
-.button-link:hover {
-    background-color: #db9232;
 }
 
 /* Seasons */
@@ -405,9 +405,9 @@ tr:nth-of-type(even) {
 
 .season-block {
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
     align-items: flex-start;
-    flex-wrap: wrap;
 }
 
 .season-block article {
@@ -422,14 +422,7 @@ tr:nth-of-type(even) {
     height: auto;
     border-radius: 8px;
     object-fit: cover;
-}
-
-/* Lists in article */
-
-article ul {
-    list-style-type: circle;
-    list-style-position: inside;
-    line-height: 2;
+    display: block;
 }
 
 /* Footer */
@@ -446,18 +439,17 @@ footer p {
     text-align: center;
 }
 
+/* Small screens */
 
 @media (max-width: 768px) {
 
+    /* Text */
     h1 {
         font-size: 5rem;
         margin-top: 1rem;
     }
 
-    h2 {
-        font-size: 2rem;
-    }
-
+    h2,
     h3 {
         font-size: 2rem;
     }
@@ -469,6 +461,8 @@ footer p {
         font-size: 1rem;
     }
 
+    /* Layout */
+
     header {
         margin: 1rem;
     }
@@ -477,14 +471,14 @@ footer p {
         flex-direction: column;
         align-items: center;
         gap: 0.5rem;
-      }
-      
-      nav a {
+    }
+
+    nav a {
         margin: 0.5rem;
         display: block;
         width: 100%;
         text-align: center;
-      }      
+    }
 
     main {
         padding: 1rem;
@@ -502,6 +496,8 @@ footer p {
         padding: 1rem;
     }
 
+    /* Images */
+
     .recipe-container img,
     .season-block img {
         width: 100%;
@@ -509,9 +505,7 @@ footer p {
         height: auto;
     }
 
-    .fruit-tips table {
-        width: 100%;
-    }
+    /* Forms */
 
     form p {
         flex-direction: column;
@@ -529,7 +523,11 @@ footer p {
         width: 100%;
     }
 
-    /* table */
+    /* Tables */
+
+    .fruit-tips table {
+        width: 100%;
+    }
 
     .fruit-tips table,
     .fruit-tips thead,
@@ -554,11 +552,10 @@ footer p {
     .fruit-tips td {
         position: relative;
         padding-left: 50%;
-        font-size: 0.7rem;
         padding-bottom: 1rem;
+        font-size: 0.8rem;
         border: none;
         text-align: right;
-        font-size: 0.8rem;
     }
 
     .fruit-tips td::before {
@@ -584,9 +581,9 @@ footer p {
     .fruit-tips td:nth-of-type(3)::before {
         content: "Undvik";
     }
-
-
 }
+
+/* Large screens */
 
 @media (min-width: 1920px) {
 
@@ -596,6 +593,8 @@ footer p {
     footer {
         max-width: 100rem;
     }
+
+    /* Text */
 
     h1 {
         font-size: 8rem;
@@ -627,7 +626,7 @@ footer p {
         font-size: 2rem;
     }
 
-    /* Filter recipes form */
+    /* Forms */
 
     input,
     select {
@@ -637,34 +636,6 @@ footer p {
     button {
         font-size: 2rem;
     }
-
-    /* Recipes gallery */
-
-    .gallery {
-        gap: 2rem;
-        padding: 4rem;
-        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    }
-
-    .card h3 {
-        font-size: 2rem;
-    }
-
-    .card p {
-        font-size: 2rem;
-    }
-
-    /* Recipe page */
-
-    .recipe-text h3 {
-        font-size: 3rem;
-    }
-
-    .recipe-text li {
-        font-size: 2rem;
-    }
-
-    /* Form */
 
     form {
         max-width: 70rem;
@@ -684,5 +655,33 @@ footer p {
         width: 16rem;
     }
 
+    /* Button */
 
+    .button,
+    .button-link {
+        font-size: 2rem;
+        padding: 1rem 2rem;
+    }
+
+
+    /* Recipe gallery */
+    .gallery {
+        gap: 2rem;
+        padding: 4rem;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    }
+
+    .card h3,
+    .card p {
+        font-size: 2rem;
+    }
+
+    /* Recipe page */
+    .recipe-text h3 {
+        font-size: 3rem;
+    }
+
+    .recipe-text li {
+        font-size: 2rem;
+    }
 }
