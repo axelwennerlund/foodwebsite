@@ -88,27 +88,46 @@ a {
 /* Navigation */
 
 nav {
+    background-color: #FFB85C;
+    max-width: 80rem;
+    margin: 2rem auto 0;
+}
+
+.nav-list {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    background-color: #FFB85C;
-    margin: 2rem auto 0;
-    padding: 1rem 0;
-    max-width: 80rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-nav a {
-    font-size: 1.5rem;
+.nav-list li {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list a {
+    display: block;
+    padding: 1rem 2rem;
     color: #262626;
-    margin: 0 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
 }
 
-nav a:visited {
+.nav-list a:visited {
     color: inherit;
 }
 
-nav a:hover {
+.nav-list a:hover,
+.nav-list a:focus {
+    font-weight: 800;
     letter-spacing: 0.1rem;
+}
+
+.nav-list a.active {
+    background-color: #fff;
 }
 
 /* Header */
@@ -261,6 +280,12 @@ button:hover,
     overflow: hidden;
     display: flex;
     flex-direction: column;
+}
+
+.card:hover,
+.card:focus-within {
+    border-color: #FFB85C;
+    box-shadow: 0 0 0 3px rgba(255, 184, 92, 0.4);
 }
 
 .card img {
@@ -467,18 +492,22 @@ footer p {
         margin: 1rem;
     }
 
-    nav {
+    .nav-list {
         flex-direction: column;
         align-items: center;
         gap: 0.5rem;
     }
-
-    nav a {
-        margin: 0.5rem;
-        display: block;
+    
+    .nav-list li {
         width: 100%;
         text-align: center;
     }
+    
+    .nav-list a {
+        display: block;
+        width: 100%;
+        padding: 1rem;
+    }    
 
     main {
         padding: 1rem;

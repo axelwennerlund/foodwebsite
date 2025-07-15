@@ -17,19 +17,19 @@
 
         <header>
             <a href="../index.html" class="header-link">
-              <h1>Gott & Enkelt</h1>
-              <h2>Din guide till matlagningsglädje</h2>
+                <h1>Gott & Enkelt</h1>
+                <h2>Din guide till matlagningsglädje</h2>
             </a>
         </header>
 
         <nav>
-            <p>
-                <a href="../index.html">Hem</a>
-                <a href="recipes.html">Recept</a>
-                <a href="tips.html">Tips</a>
-                <a href="cooking-class.html">Kurser</a>
-                <a href="contact.html">Kontakt</a>
-            </p>
+            <ul class="nav-list">
+                <li><a href="../index.html">Hem</a></li>
+                <li><a class="active" href="recipes.html">Recept</a></li>
+                <li><a href="tips.html">Tips</a></li>
+                <li><a href="cooking-class.html">Kurser</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
         </nav>
 
         <main>
@@ -41,35 +41,35 @@
             <section id="recipe-filter">
                 <form id="filter-form">
 
-                  <label for="maxTime">Max tillagningstid (minuter):</label>
-                  <input type="number" id="maxTime" name="maxTime" min="0" max="999" placeholder="">
+                    <label for="maxTime">Max tillagningstid (minuter):</label>
+                    <input type="number" id="maxTime" name="maxTime" min="0" max="999" placeholder="">
 
-                  <label for="difficulty">Svårighetsgrad:</label>
-                  <select name="difficulty_level" id="difficulty">
-                    <option value="">Alla</option>
-                    <option value="easy">Lätt</option>
-                    <option value="medium">Medel</option>
-                  </select>
+                    <label for="difficulty">Svårighetsgrad:</label>
+                    <select name="difficulty_level" id="difficulty">
+                        <option value="">Alla</option>
+                        <option value="easy">Lätt</option>
+                        <option value="medium">Medel</option>
+                    </select>
 
-                  <button type="submit">Filtrera</button>
+                    <button type="submit">Filtrera</button>
                 </form>
             </section>
 
             <section id="recipe-gallery" class="gallery"></section>
 
-          </main>          
+        </main>
 
         <footer>
             <p>&copy; 2025 Gott & Enkelt. Alla rättigheter förbehållna.</p>
-            <p>Följ oss på 
-                <a href="#">Instagram</a>, 
-                <a href="#">Facebook</a> och 
+            <p>Följ oss på
+                <a href="#">Instagram</a>,
+                <a href="#">Facebook</a> och
                 <a href="#">YouTube</a>.
             </p>
         </footer>
 
     </div>
-    
+
 </body>
 
 </html>
