@@ -412,22 +412,19 @@ tr:nth-of-type(even) {
     background-color: #eaeaea;
 }
 
+/* Fruits */
+
 .fruit-tips table {
     width: 90%;
     margin: 2rem auto;
 }
 
-/* Seasons */
-
-.seasons-container {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    max-width: 70rem;
+.fruit-image {
+    display: block;
     margin: 2rem auto;
-    padding: 1rem;
+    max-width: 100%;
+    border-radius: 8px;
 }
-
 
 /* Seasons */
 
@@ -529,7 +526,7 @@ footer p {
     .season-content img {
         max-width: 100%;
     }
-    
+
 }
 
 
@@ -605,7 +602,7 @@ footer p {
     .decor-image {
         min-height: 8rem;
         width: 40%;
-      }
+    }
 
     /* Seasons */
 
