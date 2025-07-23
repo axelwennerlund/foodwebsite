@@ -20,7 +20,7 @@ async function fetchRecipe(id){
 function renderRecipe(recipe){
 
     const webpageTitle = document.querySelector("title");
-    webpageTitle.innerHTML = `${recipe.name} - Gott & Enkelt`;
+    webpageTitle.innerHTML = `Gott & Enkelt - ${recipe.name}`;
     
     const title = document.querySelector("h3");
     title.innerHTML = `${recipe.name}`;
