@@ -298,7 +298,7 @@ button:hover,
     padding: 1rem;
 }
 
-.card h3 {
+.card h4 {
     margin: 0 0 0.5rem;
     font-size: 1.1rem;
 }
@@ -552,6 +552,23 @@ footer p {
         width: 100%;
     }
 
+    /* Filter form */
+
+    #filter-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    #filter-form label,
+    #filter-form input,
+    #filter-form select,
+    #filter-form button {
+        width: 80%;
+        max-width: 10rem;
+    }
+
     /* Tables */
 
     .fruit-tips table {
@@ -646,9 +663,13 @@ footer p {
         font-size: 2rem;
     }
 
-    nav a {
+    /* Navigation */
+
+    .nav-list a {
         font-size: 2.5rem;
     }
+
+    /* Tables */
 
     table,
     th {
@@ -679,10 +700,11 @@ footer p {
         min-width: 30rem;
     }
 
-    form p label {
+    form p label,
+    label {
         font-size: 2rem;
-        width: 16rem;
     }
+
 
     /* Button */
 
@@ -700,7 +722,7 @@ footer p {
         grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     }
 
-    .card h3,
+    .card h4,
     .card p {
         font-size: 2rem;
     }
