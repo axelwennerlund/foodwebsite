@@ -249,7 +249,7 @@ button,
 .button-link {
     display: inline-block;
     padding: 0.75rem 1rem;
-    margin: 2rem auto 0;
+    margin: 0.2rem auto 1rem;
     background-color: #FFB85C;
     color: black;
     border: none;
@@ -428,6 +428,18 @@ tr:nth-of-type(even) {
     padding: 1rem;
 }
 
+
+/* Seasons */
+
+.seasons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 70rem;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
 .season-block {
     display: flex;
     flex-wrap: wrap;
@@ -450,6 +462,41 @@ tr:nth-of-type(even) {
     display: block;
 }
 
+.season-block {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+.season-block h5 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.season-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.season-content article {
+    flex: 1;
+    text-align: left;
+}
+
+.season-content img {
+    flex: 1;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    display: block;
+}
+
 /* Footer */
 
 footer {
@@ -463,6 +510,27 @@ footer {
 footer p {
     text-align: center;
 }
+
+
+
+
+/* Pictures for medium large screens */
+
+@media (max-width: 1000px) {
+    .season-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .season-content article {
+        text-align: left;
+    }
+
+    .season-content img {
+        max-width: 100%;
+    }
+}
+
 
 /* Small screens */
 
@@ -513,7 +581,6 @@ footer p {
         padding: 1rem;
     }
 
-    .image-row,
     .course-list,
     .recipe-container {
         flex-direction: column;
@@ -532,6 +599,22 @@ footer p {
         width: 100%;
         max-width: 100%;
         height: auto;
+    }
+
+    .decor-image {
+        min-height: 8rem;
+        width: 40%;
+      }
+
+    /* Seasons */
+
+    .season-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .season-content article {
+        text-align: left;
     }
 
     /* Forms */
