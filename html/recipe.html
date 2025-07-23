@@ -3,68 +3,64 @@
 <html lang="sv">
 
 <head>
-    <title>Recept - Gott & Enkelt</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-    <link href="/assets/style/reset.css" rel="stylesheet" />
-    <link href="/assets/style/main.css" rel="stylesheet" />
-    <script src="../assets/js/recipe.js" type="module"></script>
+  <title>Recept - Gott & Enkelt</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+  <link href="/assets/style/reset.css" rel="stylesheet" />
+  <link href="/assets/style/main.css" rel="stylesheet" />
+  <script src="../assets/js/recipe.js" type="module"></script>
 </head>
 
 <body>
 
-    <div id="wrapper">
+  <header>
+    <a href="../index.html" class="header-link">
+      <h1>Gott & Enkelt</h1>
+      <h2>Din guide till matlagningsglädje</h2>
+    </a>
+  </header>
 
-        <header>
-            <a href="../index.html" class="header-link">
-              <h1>Gott & Enkelt</h1>
-              <h2>Din guide till matlagningsglädje</h2>
-            </a>
-        </header>
+  <nav>
+    <ul class="nav-list">
+      <li><a href="../index.html">Hem</a></li>
+      <li><a class="active" href="recipes.html">Recept</a></li>
+      <li><a href="tips.html">Tips</a></li>
+      <li><a href="cooking-class.html">Kurser</a></li>
+      <li><a href="contact.html">Kontakt</a></li>
+    </ul>
+  </nav>
 
-        <nav>
-            <ul class="nav-list">
-              <li><a href="../index.html">Hem</a></li>
-              <li><a class="active" href="recipes.html">Recept</a></li>
-              <li><a href="tips.html">Tips</a></li>
-              <li><a href="cooking-class.html">Kurser</a></li>
-              <li><a href="contact.html">Kontakt</a></li>
-            </ul>
-          </nav>          
+  <main>
 
-        <main>
+    <section class="recipe-container">
+      <article class="recipe-text">
+        <h3>Recepttitel</h3>
+        <p id="time">Tid</p>
+        <p id="calories">Kalorier</p>
 
-            <section class="recipe-container">
-                <article class="recipe-text">
-                  <h3>Recepttitel</h3>
-                  <p id="time">Tid</p>
-                  <p id="calories">Kalorier</p>
+        <h4>Ingredienser</h4>
+        <ul id="ingredients">
+        </ul>
 
-                  <h4>Ingredienser</h4>
-                  <ul id="ingredients">
-                  </ul>
+        <h4>Så här gör du</h4>
+        <ol id="instructions">
+        </ol>
 
-                  <h4>Så här gör du</h4>
-                  <ol id="instructions">
-                  </ol>
+      </article>
+      <img src="#" alt="Bild på maträtt" id="recipe-image">
+    </section>
 
-                </article>
-                <img src="#" alt="Bild på maträtt" id="recipe-image">
-            </section>
+  </main>
 
-          </main>          
+  <footer>
+    <p>&copy; 2025 Gott & Enkelt. Alla rättigheter förbehållna.</p>
+    <p>Följ oss på
+      <a href="#">Instagram</a>,
+      <a href="#">Facebook</a> och
+      <a href="#">YouTube</a>.
+    </p>
+  </footer>
 
-        <footer>
-            <p>&copy; 2025 Gott & Enkelt. Alla rättigheter förbehållna.</p>
-            <p>Följ oss på 
-                <a href="#">Instagram</a>, 
-                <a href="#">Facebook</a> och 
-                <a href="#">YouTube</a>.
-            </p>
-        </footer>
-
-    </div>
-    
 </body>
 
 </html>

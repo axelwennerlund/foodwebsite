@@ -95,6 +95,7 @@ nav {
 
 .nav-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
     list-style: none;
@@ -361,7 +362,6 @@ button:hover,
     gap: 2rem;
     max-width: 70rem;
     margin: 2rem auto 1rem;
-    padding: 1rem;
     text-align: center;
 }
 
@@ -529,6 +529,7 @@ footer p {
     .season-content img {
         max-width: 100%;
     }
+    
 }
 
 

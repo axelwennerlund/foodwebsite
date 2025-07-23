@@ -13,100 +13,96 @@
 
 <body>
 
-  <div id="wrapper">
+  <header>
+    <a href="../index.html" class="header-link">
+      <h1>Gott & Enkelt</h1>
+      <h2>Din guide till matlagningsglädje</h2>
+    </a>
+  </header>
+
+  <nav>
+    <ul class="nav-list">
+      <li><a href="../index.html">Hem</a></li>
+      <li><a href="recipes.html">Recept</a></li>
+      <li><a href="tips.html">Tips</a></li>
+      <li><a class="active" href="cooking-class.html">Kurser</a></li>
+      <li><a href="contact.html">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <main>
 
     <header>
-      <a href="../index.html" class="header-link">
-        <h1>Gott & Enkelt</h1>
-        <h2>Din guide till matlagningsglädje</h2>
-      </a>
+      <h3>Boka kurs</h3>
+      <p>Fält med asteriks (*) måste vara ifyllda.</p>
     </header>
 
-    <nav>
-      <ul class="nav-list">
-        <li><a href="../index.html">Hem</a></li>
-        <li><a href="recipes.html">Recept</a></li>
-        <li><a href="tips.html">Tips</a></li>
-        <li><a class="active" href="cooking-class.html">Kurser</a></li>
-        <li><a href="contact.html">Kontakt</a></li>
-      </ul>
-    </nav> 
+    <form method="post" action="#">
 
-    <main>
-
-      <header>
-        <h3>Boka kurs</h3>
-        <p>Fält med asteriks (*) måste vara ifyllda.</p>
-      </header>
-
-      <form method="post" action="#">
-
-        <p>
-          <label for="firstname">Förnamn*</label>
-          <input type="text" name="firstname" id="firstname" required>
-        </p>
-
-        <p>
-          <label for="lastname">Efternamn*</label>
-          <input type="text" name="lastname" id="lastname" required>
-        </p>
-
-        <p>
-          <label for="email">Email*</label>
-          <input type="email" name="email" id="email" required>
-        </p>
-
-        <p>
-          <label for="phone">Telefonnummer</label>
-          <input type="tel" name="phone" id="phone">
-        </p>
-
-        <p>
-          <label for="course">Välj kurs</label>
-          <select name="course" id="course">
-            <option value="">-- Välj en kurs --</option>
-            <option value="italian">Italiensk Husmanskost</option>
-            <option value="sushi">Sushi för Nybörjare</option>
-            <option value="vegetarian">Vegetarisk Matlagning</option>
-          </select>
-        </p>
-
-        <p>
-          <label for="people">Antal personer</label>
-          <select name="people" id="people">
-            <option value="">-- Välj gruppstorlek --</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-          </select>
-        </p>
-
-        <p>
-          <label for="date">Datum</label>
-          <input type="date" name="date" id="date">
-        </p>
-
-        <p>
-          <button type="submit">Boka</button>
-        </p>
-
-      </form>
-
-    </main>
-
-    <footer>
-      <p>&copy; 2025 Gott & Enkelt. Alla rättigheter förbehållna.</p>
-      <p>Följ oss på
-        <a href="#">Instagram</a>,
-        <a href="#">Facebook</a> och
-        <a href="#">YouTube</a>.
+      <p>
+        <label for="firstname">Förnamn*</label>
+        <input type="text" name="firstname" id="firstname" required>
       </p>
-    </footer>
 
-  </div>
+      <p>
+        <label for="lastname">Efternamn*</label>
+        <input type="text" name="lastname" id="lastname" required>
+      </p>
+
+      <p>
+        <label for="email">Email*</label>
+        <input type="email" name="email" id="email" required>
+      </p>
+
+      <p>
+        <label for="phone">Telefonnummer</label>
+        <input type="tel" name="phone" id="phone">
+      </p>
+
+      <p>
+        <label for="course">Välj kurs</label>
+        <select name="course" id="course">
+          <option value="">-- Välj en kurs --</option>
+          <option value="italian">Italiensk Husmanskost</option>
+          <option value="sushi">Sushi för Nybörjare</option>
+          <option value="vegetarian">Vegetarisk Matlagning</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="people">Antal personer</label>
+        <select name="people" id="people">
+          <option value="">-- Välj gruppstorlek --</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="date">Datum</label>
+        <input type="date" name="date" id="date">
+      </p>
+
+      <p>
+        <button type="submit">Boka</button>
+      </p>
+
+    </form>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Gott & Enkelt. Alla rättigheter förbehållna.</p>
+    <p>Följ oss på
+      <a href="#">Instagram</a>,
+      <a href="#">Facebook</a> och
+      <a href="#">YouTube</a>.
+    </p>
+  </footer>
 
 </body>
 
