@@ -604,6 +604,17 @@ footer p {
         width: 40%;
     }
 
+    .course-list article picture {
+        display: flex;
+        justify-content: center;
+    }
+
+    .course-list article picture img {
+        width: auto;
+        max-width: 90%;
+        max-height: 300px;
+    }
+
     /* Seasons */
 
     .season-content {
